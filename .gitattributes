@@ -1,0 +1,28 @@
+# Ensure consistent line endings
+* text=auto eol=lf
+
+# Normalize PHP, HTML, CSS, JS, JSON, YAML files
+*.php   text eol=lf
+*.html  text eol=lf
+*.css   text eol=lf
+*.js    text eol=lf
+*.json  text eol=lf
+*.yml   text eol=lf
+*.yaml  text eol=lf
+*.md    text eol=lf
+
+# Prevent binary files from being modified
+*.png   binary
+*.jpg   binary
+*.jpeg  binary
+*.gif   binary
+*.ico   binary
+*.pdf   binary
+
+# Export-ignore for distribution (like Composer packages)
+.gitattributes export-ignore
+.editorconfig export-ignore
+.gitignore    export-ignore
+.github/      export-ignore
+tests/        export-ignore
+docs/         export-ignore
